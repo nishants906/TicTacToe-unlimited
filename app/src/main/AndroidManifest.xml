@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="game.tictactoe"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+            android:name=".Play"
+            android:label="activity_play" />
+        <activity
+            android:name=".Play2"
+            android:label="activity_play2" />
+        <activity
+            android:name=".Play5"
+            android:label="activity_play5" />
+        <activity
+            android:name=".Play25"
+            android:label="play25" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PlayingMode" />
+        <activity android:name=".one_player_choices" />
+        <activity android:name=".two_player_choices" />
+        <activity android:name=".two_player_names" />
+        <activity android:name=".two_player_board_choice" />
+        <activity android:name=".unlimited" />
+        <activity android:name=".Game2u5"></activity>
+        <activity
+            android:name=".two_device_two_player"
+            android:configChanges="orientation"
+            android:label="Two Player"
+            android:screenOrientation="portrait" />
+        <activity android:name=".two_device_two_player_name" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical" android:id="@+id/p5main" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/adview55" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <HorizontalScrollView android:layout_gravity="center" android:id="@+id/horizontalScrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/tableParent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+            <TextView android:textSize="25dp" android:gravity="center" android:id="@+id/information" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="info" />
+            <TableLayout android:id="@+id/tableLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TableRow android:gravity="center" android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:id="@+id/human" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="player_one" />
+                    <TextView android:id="@+id/humanCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" />
+                    <TextView android:id="@+id/ties" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ties" />
+                    <TextView android:id="@+id/tiesCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" />
+                    <TextView android:id="@+id/android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="player_two" />
+                    <TextView android:id="@+id/androidCount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="25dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="newGame_label" android:onClick="newGame" />
+                <Button android:id="@+id/exitgame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="exitGame_label" android:onClick="exitGame" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

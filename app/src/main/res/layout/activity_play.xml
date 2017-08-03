@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/adviewp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TableLayout
+                android:id="@+id/playArea"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:textSize="10dp"
+                        android:id="@+id/one"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="one" />
+
+                    <Button android:textSize="10dp"
+                        android:id="@+id/two"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="two" />
+
+                    <Button
+                        android:id="@+id/three"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="three"
+                        android:textSize="10dp" />
+                </TableRow>
+                <TableRow  android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <Button android:textSize="10dp"
+                        android:id="@+id/four"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="four" />
+                    <Button android:textSize="10dp"
+                        android:id="@+id/five"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="five" />
+                    <Button android:textSize="10dp"
+                        android:id="@+id/six"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="six" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button android:textSize="10dp"
+                        android:id="@+id/seven"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="seven" />
+                    <Button android:textSize="10dp"
+                        android:id="@+id/eight"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="eight" />
+                    <Button android:textSize="10dp"
+                        android:id="@+id/nine"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:text="nine" />
+                </TableRow>
+            </TableLayout>
+            <TextView android:textSize="15dp"
+                 android:id="@+id/information"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="info" />
+            <TableLayout android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+                <TableRow  android:id="@+id/tableRow4"
+                    android:layout_width="wrap_content"                 android:gravity="center"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+                    <TextView android:id="@+id/human"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="human" />
+                    <TextView android:id="@+id/humanCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp" />
+                    <TextView android:id="@+id/ties"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ties" />
+                    <TextView android:id="@+id/tiesCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp" />
+                    <TextView android:id="@+id/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="android" />
+                    <TextView android:id="@+id/androidCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+            </TableLayout>
+            <LinearLayout android:orientation="horizontal"
+                android:paddingTop="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="newGame_label"
+                    android:onClick="newGame" />
+                <Button android:id="@+id/exitgame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="exitGame_label"
+                    android:onClick="exitGame" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
